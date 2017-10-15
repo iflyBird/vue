@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+    <p v-bind:title="title">html属性不能使用双大括号形式绑定，只能使用v-bind指令</p>
+</div>
+
+
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            title: 'title content'
+        }
+    });
+
+</script>
+
+
+</body>
+</html>

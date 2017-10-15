@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<!--//<div v-html="rawHtml" id="rawHtml"></div>-->
+<a v-bind：href="url">ss</a>
+<script>
+    var html=new Vue({
+        el:'#rawHtml',
+        data:{
+            rawHtml:'中国安徽芜湖',
+            url:'www.baidu.com'
+
+
+        }
+
+    })
+
+
+</script>
+
+</body>
+</html>
